@@ -1,4 +1,8 @@
-#user can give in put now
-#pyhton3
+# INPUT NUMBER OF EVEN NUMBERS
 
-print ([x for x in range(int(input()),int(input())) if not x%2])
+n=int(input('Amount: '))
+start=0
+
+for i in range(n):
+  print(start)
+  start+=2
