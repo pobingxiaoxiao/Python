@@ -19,7 +19,7 @@ class Die(object):
   def set_sides(self, sides_change):
     if sides_change>=4:
       if sides_change != 6:
-        print("change sides from 6 to ",sides_change," !")
+        print("change sides from {} to {}".format(self.sides,sides_change)," !")
       self.sides = sides_change
     else:
       print("wrong sides! sides set to 6")
@@ -30,5 +30,6 @@ class Die(object):
 d = Die()
 d1 = Die()
 d.set_sides(4)
+d.set_sides(5)
 d1.set_sides(4)
 print (d.roll(), d1.roll())
